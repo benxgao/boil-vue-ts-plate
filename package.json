@@ -1,19 +1,64 @@
 {
-  "name": "xcutes",
-  "version": "0.0.0",
+  "name": "boil-vue-ts-plate",
+  "version": "0.1.0",
+  "description": "A simple Minimum Viable Template of Vue.js application",
+  "keywords": ["boilerplate", "template", "simple", "basic", "tiny", "vue", "typescript"],
+  "author": "Xingbin Gao <xingbingao@gmail.com> (github.com/benxgao/)",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "jest"
+    "lint": "eslint --ext .ts,.vue src",
+    "test": "jest",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,css,vue}": [
+      "prettier-eslint --write \"src/**/*.ts\" \"src/**/*.vue\"",
+      "eslint --fix",
+      "git add"
+    ]
   },
   "dependencies": {
-    "vue": "3",
+    "husky": "^4.3.0",
+    "vue": "^3",
     "vue-router": "^4.0.0-beta.11",
     "vuex": "^4.0.0-beta.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.11.0",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.13",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "@vue/babel-preset-app": "^4.5.6",
     "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.3.0",
+    "babel-plugin-external-helpers": "6.22.0",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-prettier-vue": "^2.1.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "fibers": "^5.0.0",
     "jest": "^26.4.2",
-    "vite": "^1.0.0-rc.4"
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
+    "prettier-eslint": "^11.0.0",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "tailwindcss": "^1.8.10",
+    "typescript": "^4.0.3",
+    "vite": "^1.0.0-rc.4",
+    "vue-eslint-parser": "^7.1.0"
   }
 }

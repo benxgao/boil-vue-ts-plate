@@ -1,0 +1,27 @@
+/**
+ * https://tailwindcss.com/docs/using-with-preprocessors#using-postcss-as-your-preprocessor
+ * https://tailwindcss.com/docs/using-with-preprocessors
+ */
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+.card {
+  @apply rounded-none;
+
+  @media (min-width: theme('screens.sm')) {
+    @apply rounded-lg;
+  }
+}
+
+@screen sm {
+  .card {
+    @apply rounded-lg;
+  }
+}
