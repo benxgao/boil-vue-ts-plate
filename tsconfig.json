@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "esModuleInterop": true,
+    // "lib": ["es6"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    // "noEmit": true,
+    "noImplicitAny": false,
+    "outDir": "./dist",
+    "pretty": true,
+    // "sourceMap": true,
+    // "strict": true,
+    "target": "es2017"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "src/__tests__/**/*"
+  ]
+}
