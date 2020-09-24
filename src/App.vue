@@ -1,18 +1,27 @@
 <template>
-  <Nav class="mb-6" />
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" class="text-center" />
-  <div class="container mx-auto py-10"></div>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
-import Nav from './components/Nav.vue';
 
-export default {
+export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld,
-  },
-};
+    HelloWorld
+  }
+});
 </script>
+
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>

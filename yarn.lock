@@ -2590,11 +2590,6 @@ async@^2.6.2:
   dependencies:
     lodash "^4.17.14"
 
-async@~0.2.9:
-  version "0.2.10"
-  resolved "https://registry.npmjs.org/async/-/async-0.2.10.tgz#b6bbe0b0674b9d719708ca38de8c237cb526c3d1"
-  integrity sha1-trvgsGdLnXGXCMo43owjfLUmw9E=
-
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -3503,11 +3498,6 @@ commander@^5.0.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
   integrity sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
-
-commander@~2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/commander/-/commander-2.0.0.tgz#d1b86f901f8b64bd941bdeadaf924530393be928"
-  integrity sha1-0bhvkB+LZL2UG96tr5JFMDk76Sg=
 
 commander@~2.19.0:
   version "2.19.0"
@@ -5660,23 +5650,6 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-github-cli@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/github-cli/-/github-cli-0.0.5.tgz#c7dec31869bb3065d7f47398174469a5b961ab66"
-  integrity sha1-x97DGGm7MGXX9HOYF0Rppblhq2Y=
-  dependencies:
-    async "~0.2.9"
-    commander "~2.0.0"
-    github "~0.1.10"
-    mute-stream "~0.0.4"
-    node.extend "~1.0.8"
-    read "~1.0.5"
-
-github@~0.1.10:
-  version "0.1.16"
-  resolved "https://registry.npmjs.org/github/-/github-0.1.16.tgz#895d2a85b0feb7980d89ac0ce4f44dcaa03f17b5"
-  integrity sha1-iV0qhbD+t5gNiawM5PRNyqA/F7U=
-
 glob-parent@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/glob-parent/-/glob-parent-3.1.0.tgz#9e6af6299d8d3bd2bd40430832bd113df906c5ae"
@@ -6655,11 +6628,6 @@ is-wsl@^2.1.1, is-wsl@^2.2.0:
   integrity sha512-fKzAra0rGJUUBwGBgNkHZuToZcn+TtXHpeCgmkMJMMYx1sQDYaCSyjJBSCa2nH1DGm7s3n1oBnohoVTBaN7Lww==
   dependencies:
     is-docker "^2.0.0"
-
-is@~0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/is/-/is-0.3.0.tgz#a8f71dfc8a6e28371627f26c929098c6f4d5d5d7"
-  integrity sha1-qPcd/IpuKDcWJ/JskpCYxvTV1dc=
 
 isarray@0.0.1:
   version "0.0.1"
@@ -8011,7 +7979,7 @@ multicast-dns@^6.0.1:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
 
-mute-stream@0.0.8, mute-stream@~0.0.4:
+mute-stream@0.0.8:
   version "0.0.8"
   resolved "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
@@ -8150,13 +8118,6 @@ node-releases@^1.1.61:
   version "1.1.61"
   resolved "https://registry.npmjs.org/node-releases/-/node-releases-1.1.61.tgz#707b0fca9ce4e11783612ba4a2fcba09047af16e"
   integrity sha512-DD5vebQLg8jLCOzwupn954fbIiZht05DAZs0k2u8NStSe6h9XdsuIQL8hSRKYiU8WUQRznmSDrKGbv3ObOmC7g==
-
-node.extend@~1.0.8:
-  version "1.0.10"
-  resolved "https://registry.npmjs.org/node.extend/-/node.extend-1.0.10.tgz#3269bddf81c54535f408abc784c32b0d2bd55f6f"
-  integrity sha1-Mmm934HFRTX0CKvHhMMrDSvVX28=
-  dependencies:
-    is "~0.3.0"
 
 normalize-package-data@^2.3.2, normalize-package-data@^2.5.0:
   version "2.5.0"
@@ -9858,13 +9819,6 @@ read-pkg@^5.1.1, read-pkg@^5.2.0:
     parse-json "^5.0.0"
     type-fest "^0.6.0"
 
-read@~1.0.5:
-  version "1.0.7"
-  resolved "https://registry.npmjs.org/read/-/read-1.0.7.tgz#b3da19bd052431a97671d44a42634adf710b40c4"
-  integrity sha1-s9oZvQUkMal2cdRKQmNK33ELQMQ=
-  dependencies:
-    mute-stream "~0.0.4"
-
 "readable-stream@1 || 2", readable-stream@^2.0.0, readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.1.5, readable-stream@^2.2.2, readable-stream@^2.3.3, readable-stream@^2.3.6, readable-stream@~2.3.6:
   version "2.3.7"
   resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.7.tgz#1eca1cf711aef814c04f62252a36a62f6cb23b57"
@@ -11467,7 +11421,7 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.9.3:
+typescript@^3.9.3, typescript@~3.9.3:
   version "3.9.7"
   resolved "https://registry.npmjs.org/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==

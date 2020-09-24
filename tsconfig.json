@@ -1,20 +1,40 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationDir": "./dist",
-    "esModuleInterop": true,
+    "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
-    "noImplicitAny": false,
-    "outDir": "./dist",
-    "pretty": true,
     "strict": true,
-    "target": "esnext"
-    // "noEmit": true,
-    // "lib": ["es6"],
-    // "sourceMap": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
   },
-  "include": ["src/**/*"],
-  "exclude": ["dist", "node_modules", "src/__tests__/**/*"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
